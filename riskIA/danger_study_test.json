@@ -1,0 +1,65 @@
+{
+  "installation": "Installation Test",
+  "location": "Contes, France",
+  "date": "2026-01-26T12:32:37.527324",
+  "environment": {
+    "localisation": "Zone industrielle",
+    "aléas_naturels": {
+      "sismicité": "Zone 4 (moyenne)",
+      "inondation": "Faible risque"
+    },
+    "aléas_technologiques": {},
+    "population": {
+      "habitants_proches": 1000,
+      "distance_plus_proche": 500
+    },
+    "environnement": {}
+  },
+  "hazards": [
+    {
+      "type": "Naturel",
+      "name": "Séisme",
+      "description": "Risque sismique zone 4"
+    },
+    {
+      "type": "Technologique",
+      "name": "Incendie",
+      "description": "Risque d'incendie dans les stockages"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Incendie de stockage",
+      "description": "Incendie généralisé dans une cellule de stockage",
+      "base_probability": 0.001,
+      "risk_factors": [
+        {
+          "type": "multiplicative",
+          "value": 2.0,
+          "reason": "Matériaux inflammables"
+        }
+      ],
+      "consequences": {
+        "fatalities": 0,
+        "injuries": 5,
+        "environmental_impact": "moderate"
+      },
+      "mitigations": [
+        "Système d'extinction automatique",
+        "Surveillance"
+      ]
+    }
+  ],
+  "risk_assessment": {
+    "Incendie de stockage": {
+      "probability": 0.002,
+      "severity": "Mineure",
+      "risk_level": "Faible",
+      "mitigations": [
+        "Système d'extinction automatique",
+        "Surveillance"
+      ]
+    }
+  },
+  "summary": "\n        ÉTUDE DES DANGERS - Installation Test\n        Localisation: Contes, France\n        Date: 26/01/2026\n\n        RÉSUMÉ NON TECHNIQUE\n\n        Cette étude des dangers analyse les risques potentiels associés à l'installation.\n        L'analyse s'appuie sur une méthodologie structurée comprenant :\n\n        1. Caractérisation de l'environnement\n        2. Identification des sources de danger\n        3. Définition des scénarios d'accidents\n        4. Évaluation des risques\n\n        ENVIRONNEMENT:\n        {\n  \"localisation\": \"Zone industrielle\",\n  \"aléas_naturels\": {\n    \"sismicité\": \"Zone 4 (moyenne)\",\n    \"inondation\": \"Faible risque\"\n  },\n  \"aléas_technologiques\": {},\n  \"population\": {\n    \"habitants_proches\": 1000,\n    \"distance_plus_proche\": 500\n  },\n  \"environnement\": {}\n}\n\n        SOURCES DE DANGER IDENTIFIÉES:\n        2 sources potentielles d'agression identifiées.\n\n        SCÉNARIOS D'ACCIDENTS:\n        1 scénarios analysés.\n\n        ÉVALUATION DES RISQUES:\n        {\n  \"Incendie de stockage\": {\n    \"probability\": 0.002,\n    \"severity\": \"Mineure\",\n    \"risk_level\": \"Faible\",\n    \"mitigations\": [\n      \"Système d'extinction automatique\",\n      \"Surveillance\"\n    ]\n  }\n}\n\n        CONCLUSION:\n        L'étude permet d'identifier les mesures de prévention et de protection nécessaires\n        pour assurer la sécurité de l'installation et de son environnement.\n        "
+}
